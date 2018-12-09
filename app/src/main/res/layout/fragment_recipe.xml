@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".recipe.RecipeFragment">
+
+    <ImageView
+        android:id="@+id/recipeCoverIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="72dp"
+        android:src="@drawable/baseline_camera_black_48"/>
+
+    <EditText
+        android:id="@+id/recipeTitleTv"
+        android:hint="Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/recipeAuthorTv"
+        android:inputType="text"
+        android:hint="Author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/servingPortionTv"
+        android:inputType="text"
+        android:hint="Servings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/timeCookingTv"
+        android:inputType="text"
+        android:hint="Time to cook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
