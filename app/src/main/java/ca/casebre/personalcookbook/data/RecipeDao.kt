@@ -10,9 +10,12 @@ import ca.casebre.personalcookbook.entities.Recipe
 @Dao
 interface RecipeDao {
     @Insert(onConflict = REPLACE)
-    fun saveRecipe(recipe: Recipe)
+    fun insert(recipe: Recipe)
 
     @Query("SELECT * FROM Recipe WHERE id = :recipeId")
     fun fetchRecipe(recipeId : Int) : LiveData<Recipe>
+
+    @Query("SELECT * FROM Recipe")
+    fun getALlRecipes() : LiveData<List<Recipe>>
 
 }

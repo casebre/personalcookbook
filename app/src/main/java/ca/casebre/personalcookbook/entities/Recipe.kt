@@ -4,7 +4,7 @@ import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
 
 @Entity
-class Recipe(
+data class Recipe(
         @PrimaryKey(autoGenerate = true)
         var id: Int = 0,
         var title: String = "",
